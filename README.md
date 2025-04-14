@@ -1,2 +1,3 @@
-# globalazure2025
-Global Azure 2025 - Vietnam
+# Global Azure 2025 - Vietnam
+
+ https://devcafevn.github.io/dotnetconf2024
