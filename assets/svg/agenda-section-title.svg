@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1092.11 138.8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        fill: #26285a;
+        font-family: Mulish-Bold, Mulish;
+        font-size: 105.11px;
+        font-weight: 700;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: .03em;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="25.66" y1="133.52" x2="1054.79" y2="133.52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f4ad33"/>
+      <stop offset=".14" stop-color="#f4a432"/>
+      <stop offset=".37" stop-color="#f68b31"/>
+      <stop offset=".66" stop-color="#fa6430"/>
+      <stop offset="1" stop-color="#ff2e2e"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <text class="cls-5" transform="translate(0 89.61)"><tspan class="cls-7" x="0" y="0">Agenda (Vietnamese)</tspan></text>
+    <rect class="cls-1" x="25.66" y="128.23" width="900.13" height="10.57" rx="5.28" ry="5.28"/>
+  </g>
+</svg>
