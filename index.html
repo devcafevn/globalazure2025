@@ -21,10 +21,16 @@
   <nav id="navbar" class="navbar navbar-dark navbar-expand-lg fixed-top">
     <div class="container-fluid g-0">
       <a class="navbar-brand" href="#"><img class="main-logo" src="./assets/svg/main-logo.svg" /></a>
+      <a class="navbar-brand" href="#"><img class="sencondary-logo" src="./assets/img/globalAzure2025.png" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <svg class="navbar-toggler-icon" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" stroke="#000" stroke-width="2">
+            <path d="M4 7h22M4 14h22M4 21h22" />
+          </g>
+        </svg>
       </button>
+
       <div class="collaPaper & I Cafepse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
@@ -49,15 +55,7 @@
 
   <img src="./assets/img/about-bg.jpg" alt="Landing background" class="landing-background" />
   <div class="container-fluid g-0 landing-section">
-    <!-- <div class="image-with-divider">
-      <img src="./assets/svg/big-title.svg" alt="Global Azure 2025 Vietnam" class="big-title" />
-      <div class="custom-divider"></div>
-    </div> -->
-
-    <div class="image-with-divider">
-      <h1 class="big-title-text">Global Azure 2025 Vietnam</h1>
-      <div class="custom-divider"></div>
-    </div>
+    <img src="./assets/svg/big-title.png" alt="Global Azure 2025 Vietnam" class="big-title" />
     <div class="when-info">
       <img src="./assets/svg/calendar.svg" alt="calendar-icon" class="info-icons" />
       <div class="info-text">08:30 AM - 12:30 PM | Saturday, 10 May 2025</div>
@@ -76,7 +74,7 @@
       <div class="info-text">Online via Microsoft Teams</div>
       <!--<a class="btn btn-info ms-teams-btn-primary join-online-text" href="#">Join Online</a>-->
     </div>
-    <a href="" target="_blank"><img src="./assets/svg/register-now-btn.svg" alt="Register Now"
+    <a href="" target="_blank"><img src="./assets/svg/register-now-btn.png" alt="Register Now"
         class="register-now-btn" /></a>
   </div>
   <div class="countdown-background">
@@ -130,13 +128,12 @@
       <div class="row g-0 background-white section-title">
         <img src="./assets/svg/gift-section-title.svg" alt="Gift section title" class="gift-section-title" />
       </div>
-
       <!-- Offline Attendees Section -->
       <div class="row g-0 gift-section-padding d-flex justify-content-center">
         <div class="col-12 mb-3 mt-4">
-          <div class="text-with-box">
-            <div class="red-box"></div>
-            <h5><strong>For offline attendees</strong></h5>
+          <div class="text-with-box d-flex align-items-center">
+            <img src="./assets/img/indicator.png" alt="Indicator" class="me-2" style="width: 8px; height: 32px;" />
+            <h5 class="mb-0"><strong>For offline attendees</strong></h5>
           </div>
         </div>
 
@@ -155,15 +152,14 @@
       <!-- Online Attendees Section -->
       <div class="row g-0 gift-section-padding d-flex justify-content-center">
         <div class="divider"></div>
-
         <div class="col-12 mb-3 mt-4">
-          <div class="text-with-box">
-            <div class="red-box"></div>
+          <div class="text-with-box d-flex align-items-center">
+            <img src="./assets/img/indicator.png" alt="Indicator" class="me-2" style="width: 8px; height: 32px;" />
             <h5><strong>For online attendees</strong></h5>
           </div>
         </div>
 
-        <div class="col-md-4 col-sm-12 d-flex justify-content-center gift-background">
+        <div class="col-md-4 col-sm-12 d-flex justify-content-center">
           <img src="./assets/img/gifts/balo.png" alt="Balo" class="g-5 gift-responsive-img" />
         </div>
         <div class="col-md-4 col-sm-12 d-flex justify-content-center">
@@ -424,10 +420,12 @@
                   <p class="speaker-name">Phuc Nguyen</p>
                   <hr class="speaker-divider" />
                   <p class="speaker-description">
-                    Phuc is Technical Architect, Agile coach at
-                    NashTech. He is passionate about applying
-                    agile methodologies and best practices to
-                    ensure quality...
+                    Phuc is Technical Architect, Agile coach at NashTech. He is passionate about applying agile
+                    methodologies and best practices to ensure quality and efficiency. He has experience in building and
+                    maintaining large-scale applications. He is the creator of <a target="_blank"
+                      href="https://github.com/phucnt1992/azure-well-architected-framework-mindmap">Azure
+                      Well-Architected Framework Mind
+                      map.</a>
                   </p>
                   <div class="speaker-social">
                     <!-- <a class="social-icon" target="_blank" href="#">
@@ -448,9 +446,9 @@
 
             <div id="sponsors-section" class="col-12 sponsors-section">
               <div class="text-centered our-sponsors-title">Sponsored and hosted by</div>
-              <div class="sponsors-icon-group">
-                <img src="./assets/img/nashtech-icon.png" alt="NashTech" class="nt-sponsor-icon pe-2" />
-                <img src="./assets/img/microsoft-icon.png" alt="Microsoft" class="ms-sponsor-icon ps-2" />
+              <div class="sponsors-icon-group d-flex align-items-center gap-3">
+                <img src="./assets/img/nashtech-icon.svg" alt="NashTech" class="nt-sponsor-icon pe-2" />
+                <img src="./assets/img/microsoft-icon.svg" alt="Microsoft" class="ms-sponsor-icon ps-2" />
               </div>
             </div>
           </div>

@@ -27,8 +27,6 @@ html {
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-color: black;
-  /* <-- black background */
 }
 
 .social-icon>span {
@@ -41,15 +39,15 @@ html {
 
 
 .github {
-  background-image: url("../assets/img/github-icon.png");
+  background-image: url("../assets/img/github-icon.svg");
 }
 
 .facebook {
-  background-image: url("../assets/img/fb-icon.png");
+  background-image: url("../assets/img/fb-icon.svg");
 }
 
 .linkedin {
-  background: url("../assets/img/linkedin-icon.png");
+  background: url("../assets/img/linkedin-icon.svg");
 }
 
 /* Lines clamp */
@@ -175,14 +173,14 @@ html {
 /* Initially make the navbar background transparent */
 .navbar {
   transition: background-color 0.4s ease, color 0.4s ease;
-  background-color: rgba(14, 2, 65, 0);
+  /* background-color: rgb(227, 243, 250); */
   padding: 3% 8%;
   transition: padding 0.5s ease-in-out
 }
 
 /* Navbar background color when scrolled */
 .navbar.scrolled {
-  /* background-color: #0e0241 !important; */
+  background-color: rgb(227, 243, 250) !important;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 0.5% 8%;
   transition: padding 0.5s ease-in-out
@@ -222,6 +220,11 @@ html {
 
 .main-logo {
   height: 3vw;
+  width: auto;
+}
+
+.sencondary-logo {
+  height: 4vw;
   width: auto;
 }
 
@@ -468,21 +471,12 @@ html {
 
 /* Gifts */
 
-.gift-background {
-  /* background-image: url('./assets/img/gift-bg.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
-  background-color: #f3f2f1;
-}
-
-
 .gift-responsive-img {
   width: 40%;
   /* max-width: 120px; */
   height: auto;
-  /* padding-top: 8px;
-  padding-bottom: 8px; */
+  /* padding-top: 8px; */
+  padding-bottom: 8px;
 }
 
 
@@ -769,7 +763,7 @@ html {
   }
 
   .navbar {
-    background-color: transparent;
+    /* background-color: rgb(227, 243, 250); */
     padding: 3% 8%;
   }
 
