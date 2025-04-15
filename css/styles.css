@@ -8,8 +8,28 @@ html {
 
 .module-border-wrap {
   position: relative;
-  background: linear-gradient(to right, #f4ad33, #f3a832, #f09b30, #ed852d, #e76629, #e03f24, #d80f1e, #d6001c);
-  background-image: linear-gradient(to right, #f4ad33, #f3a832, #f09b30, #ed852d, #e76629, #e03f24, #d80f1e, #d6001c);
+  background: linear-gradient(
+    to right,
+    #f4ad33,
+    #f3a832,
+    #f09b30,
+    #ed852d,
+    #e76629,
+    #e03f24,
+    #d80f1e,
+    #d6001c
+  );
+  background-image: linear-gradient(
+    to right,
+    #f4ad33,
+    #f3a832,
+    #f09b30,
+    #ed852d,
+    #e76629,
+    #e03f24,
+    #d80f1e,
+    #d6001c
+  );
   padding: 2px;
 }
 
@@ -29,14 +49,13 @@ html {
   background-size: 100% 100%;
 }
 
-.social-icon>span {
+.social-icon > span {
   display: inline-block;
   width: 32px;
   height: 32px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-
 
 .github {
   background-image: url("../assets/img/github-icon.svg");
@@ -125,10 +144,9 @@ html {
   border-right: 1px solid #ccc;
 }
 
-
 /* Primary Button */
 .ms-teams-btn-primary {
-  background-color: #6264A7;
+  background-color: #6264a7;
   color: white;
   border: none;
   padding: 8px 16px;
@@ -140,15 +158,15 @@ html {
 }
 
 .ms-teams-btn-primary:hover {
-  background-color: #5052A3;
+  background-color: #5052a3;
   color: white;
 }
 
 /* Secondary Button */
 .ms-teams-btn-secondary {
   background-color: white;
-  color: #6264A7;
-  border: 1px solid .6264A7;
+  color: #6264a7;
+  border: 1px solid 0.6264A7;
   padding: 8px 16px;
   font-size: 14px;
   border-radius: 4px;
@@ -161,7 +179,7 @@ html {
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, #F4AB41, #ED1C24);
+  background: linear-gradient(90deg, #f4ab41, #ed1c24);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -175,7 +193,7 @@ html {
   transition: background-color 0.4s ease, color 0.4s ease;
   /* background-color: rgb(227, 243, 250); */
   padding: 3% 8%;
-  transition: padding 0.5s ease-in-out
+  transition: padding 0.5s ease-in-out;
 }
 
 /* Navbar background color when scrolled */
@@ -183,7 +201,7 @@ html {
   background-color: rgb(227, 243, 250) !important;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 0.5% 8%;
-  transition: padding 0.5s ease-in-out
+  transition: padding 0.5s ease-in-out;
 }
 
 /* Text color when navbar is transparent */
@@ -410,7 +428,7 @@ html {
 .about-item-text {
   width: 100%;
   color: #62666a;
-  text-align: justify;
+  text-align: left;
 }
 
 .divider {
@@ -432,7 +450,7 @@ html {
   margin: 0;
   padding: 0;
   line-height: 1.2;
-  background: linear-gradient(90deg, #F4AB41, #ED1C24);
+  background: linear-gradient(90deg, #f4ab41, #ed1c24);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -458,7 +476,7 @@ html {
 .red-box {
   width: 6px;
   height: 2.5em;
-  background: linear-gradient(90deg, #F4AB41, #ED1C24);
+  background: linear-gradient(90deg, #f4ab41, #ed1c24);
   margin-right: 10px;
   border-radius: 2px;
 }
@@ -468,17 +486,15 @@ html {
   /* remove default heading margins */
 }
 
-
 /* Gifts */
 
 .gift-responsive-img {
-  width: 40%;
+  width: 80%;
   /* max-width: 120px; */
   height: auto;
   /* padding-top: 8px; */
   padding-bottom: 8px;
 }
-
 
 .gift-section {
   background-color: #f1f3f6;
@@ -507,8 +523,28 @@ html {
 }
 
 .gift-radial-gradient {
-  background: radial-gradient(circle farthest-side at 150px 40px, #a03d00, #803000, #592200, #381500, #1f0c00, #0e0500, #030100, #000);
-  background-image: radial-gradient(circle farthest-side at 150px 40px, #a03d00, #803000, #592200, #381500, #1f0c00, #0e0500, #030100, #000);
+  background: radial-gradient(
+    circle farthest-side at 150px 40px,
+    #a03d00,
+    #803000,
+    #592200,
+    #381500,
+    #1f0c00,
+    #0e0500,
+    #030100,
+    #000
+  );
+  background-image: radial-gradient(
+    circle farthest-side at 150px 40px,
+    #a03d00,
+    #803000,
+    #592200,
+    #381500,
+    #1f0c00,
+    #0e0500,
+    #030100,
+    #000
+  );
 }
 
 .gift-title {
@@ -523,7 +559,6 @@ html {
 }
 
 /* End Gifts */
-
 
 .agenda-section {
   display: flex;
@@ -619,7 +654,7 @@ html {
   /* width: 40%; */
   justify-content: center;
   align-items: flex-start;
-  margin: 4% auto
+  margin: 4% auto;
 }
 
 .speaker-image {
@@ -637,7 +672,7 @@ html {
 
 .speaker-name {
   /* color: white; */
-  background: linear-gradient(90deg, #F4AB41, #ED1C24);
+  background: linear-gradient(90deg, #f4ab41, #ed1c24);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -649,7 +684,7 @@ html {
 .speaker-divider {
   margin-top: 0.5vw;
   margin-bottom: 0.5vw;
-  color: white;
+  color: lightgray;
   opacity: 0.8;
 }
 
@@ -865,7 +900,7 @@ html {
   }
 
   .about-item-text {
-    text-align: justify;
+    text-align: left;
   }
 
   .gift-section-title {
@@ -976,7 +1011,6 @@ html {
     width: 12%;
   }
 }
-
 
 @media only screen and (min-width: 992px) {
   .vertical-speakers {
@@ -1136,7 +1170,6 @@ html {
 }
 
 @media only screen and (max-width: 500px) {
-
   .info-text,
   .join-online-text {
     font-size: calc(0.8vw + 0.8vh);
@@ -1169,7 +1202,6 @@ html {
     margin-bottom: 2vw;
   }
 
-
   .agenda-title-container {
     flex-direction: column;
   }
@@ -1180,7 +1212,7 @@ html {
   }
 
   .social-icon,
-  .social-icon>span {
+  .social-icon > span {
     width: 24px;
     height: 24px;
   }
