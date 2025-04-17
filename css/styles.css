@@ -1,9 +1,17 @@
+@import url("./mulish-font.css");
+
 body,
 html {
   height: 100%;
   margin: 0;
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
+}
+
+.gradient-underline {
+  display: inline;
+  position: relative;
+  width: auto;
 }
 
 .module-border-wrap {
@@ -31,6 +39,17 @@ html {
     #d6001c
   );
   padding: 2px;
+}
+
+.gradient-underline .underline {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px; /* adjust space below the text */
+  width: 80%;
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(to right, #facc15, #f43f5e); /* yellow to red */
 }
 
 .module {
@@ -204,6 +223,12 @@ html {
   transition: padding 0.5s ease-in-out;
 }
 
+.navbar.showing {
+  background-color: rgb(227, 243, 250) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: padding 0.5s ease-in-out;
+}
+
 /* Text color when navbar is transparent */
 .navbar .nav-link,
 .navbar .navbar-brand {
@@ -242,8 +267,14 @@ html {
 }
 
 .sencondary-logo {
-  height: 4vw;
+  height: max(4vw, 60px);
   width: auto;
+}
+
+/* @media (max-width: ) */
+.container-banner {
+  padding-top: 25%;
+  padding-bottom: 5%;
 }
 
 .landing-background {
@@ -255,15 +286,25 @@ html {
   z-index: -999999;
 }
 
+.background-banner {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -999999;
+}
+
 .landing-section {
   z-index: 1000;
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
   top: 0;
   left: 0;
   display: flex;
   flex-direction: column;
-  padding-left: 8%;
-  padding-top: 25%;
+  /* padding-left: 8%;
+  padding-top: 25%; */
 }
 
 .big-title {
@@ -275,6 +316,7 @@ html {
   display: flex;
   align-items: center;
   margin-top: 1.5rem;
+  max-width: 500px;
 }
 
 .where-info {
@@ -568,8 +610,11 @@ html {
 }
 
 .agenda-section-title {
-  width: 45%;
+  font-size: 40px;
+  color: #27295a;
   height: auto;
+  font-weight: 800;
+  display: inline;
 }
 
 .agenda-item {
@@ -816,12 +861,20 @@ html {
   }
 
   .landing-section {
-    padding-top: 23%;
+    /* padding-top: 23%; */
+  }
+
+  .container-banner {
+    padding-top: 25%;
   }
 
   .big-title {
     width: 70%;
     height: auto;
+  }
+
+  .info-text {
+    max-width: 300px;
   }
 
   .info-text,
@@ -910,7 +963,7 @@ html {
   }
 
   .agenda-section-title {
-    width: 40%;
+    font-size: 36px !important;
     height: auto;
     margin-top: 6vw;
   }
@@ -1094,7 +1147,8 @@ html {
   }
 
   .agenda-section-title {
-    width: 75%;
+    /* width: 75%; */
+    font-size: 28px !important;
   }
 
   .speakers-section-title {
@@ -1167,6 +1221,9 @@ html {
   /* .speakers-sponsor-background {
     height: 110vw;
   } */
+  .info-text {
+    max-width: 150px;
+  }
 }
 
 @media only screen and (max-width: 500px) {

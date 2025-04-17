@@ -20,9 +20,12 @@
   <!-- Navbar -->
   <nav id="navbar" class="navbar navbar-dark navbar-expand-lg fixed-top">
     <div class="container-fluid g-0">
-      <a class="navbar-brand" href="#"><img class="main-logo" src="./assets/svg/main-logo.svg" /></a>
-      <a class="navbar-brand" href="#"><img class="sencondary-logo" src="./assets/img/globalAzure2025.png" /></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      <div class="d-flex justify-content-start align-items-center g-0">
+        <a class="navbar-brand" href="#"><img class="main-logo" src="./assets/svg/main-logo.svg" /></a>
+        <a class="navbar-brand" href="#"><img class="sencondary-logo" src="./assets/img/globalAzure2025.png" /></a>
+      </div>
+
+      <button class="navbar-toggler btn-navbar-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <svg class="navbar-toggler-icon" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" stroke="#000" stroke-width="2">
@@ -31,10 +34,10 @@
         </svg>
       </button>
 
-      <div class="collaPaper & I Cafepse navbar-collapse" id="navbarNav">
+      <div class="navbar-default navbar-collapse collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active nav-text" aria-current="page" href="#about-section">About</a>
+            <a class="nav-link nav-text" aria-current="page" href="#about-section">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link nav-text" href="#agenda-section">Agenda</a>
@@ -53,29 +56,35 @@
     </div>
   </nav>
 
-  <img src="./assets/img/about-bg.jpg" alt="Landing background" class="landing-background" />
+  <!-- class="landing-background" -->
+
   <div class="container-fluid g-0 landing-section">
-    <img src="./assets/svg/big-title.png" alt="Global Azure 2025 Vietnam" class="big-title" />
-    <div class="when-info">
-      <img src="./assets/svg/calendar.svg" alt="calendar-icon" class="info-icons" />
-      <div class="info-text">08:30 AM - 12:30 PM | Saturday, 10 May 2025</div>
-    </div>
-    <div class="where-info">
-      <img src="./assets/svg/location.svg" alt="location-icon" class="info-icons" />
-      <div class="info-text">
-        <div>Paper & I Cafe</div>
-        <div style="font-weight: lighter">
-          152 Nam Ky Khoi Nghia Street, Ben Nghe Ward, District 1, HCMC
+    <img src="./assets/img/about-bg.jpg" alt="Landing background" class="background-banner" />
+    <div class="container-fluid content-padding container-banner">
+      <img src="./assets/svg/big-title.png" alt="Global Azure 2025 Vietnam" class="big-title" />
+      <div class="when-info">
+        <img src="./assets/svg/calendar.svg" alt="calendar-icon" class="info-icons" />
+        <div class="info-text">
+          08:30 AM - 12:30 PM | Saturday, 10 May 2025
         </div>
       </div>
+      <div class="where-info">
+        <img src="./assets/svg/location.svg" alt="location-icon" class="info-icons" />
+        <div class="info-text">
+          <div>Paper & I Cafe</div>
+          <div style="font-weight: lighter">
+            152 Nam Ky Khoi Nghia Street, Ben Nghe Ward, District 1, HCMC
+          </div>
+        </div>
+      </div>
+      <div class="when-info">
+        <img src="./assets/svg/ms-team-icon.svg" alt="ms-team-icon" class="info-icons" />
+        <div class="info-text">Online via Microsoft Teams</div>
+        <!--<a class="btn btn-info ms-teams-btn-primary join-online-text" href="#">Join Online</a>-->
+      </div>
+      <a href="https://forms.office.com/r/gtNbv9LsJh" target="_blank"><img src="./assets/svg/register-now-btn.png"
+          alt="Register Now" class="register-now-btn" /></a>
     </div>
-    <div class="when-info">
-      <img src="./assets/svg/ms-team-icon.svg" alt="ms-team-icon" class="info-icons" />
-      <div class="info-text">Online via Microsoft Teams</div>
-      <!--<a class="btn btn-info ms-teams-btn-primary join-online-text" href="#">Join Online</a>-->
-    </div>
-    <a href="https://forms.office.com/r/gtNbv9LsJh" target="_blank"><img src="./assets/svg/register-now-btn.png"
-        alt="Register Now" class="register-now-btn" /></a>
   </div>
   <div class="countdown-background">
     <div class="countdown-container">
@@ -165,7 +174,16 @@
     <!-- Agenda -->
     <div id="agenda-section" class="row content-section content-padding agenda-section">
       <div class="row section-title">
-        <img src="./assets/svg/agenda-section-title.svg" alt="Agenda section title" class="agenda-section-title" />
+        <div class="gradient-underline">
+          <h2 class="agenda-section-title">Agenda (Vietnamese)</h2>
+          <span class="underline"></span>
+        </div>
+
+        <!-- <img
+            src="./assets/svg/agenda-section-title.svg"
+            alt="Agenda section title"
+            class="agenda-section-title"
+          /> -->
       </div>
       <!-- Check-in -->
       <div class="row g-0 agenda-item mb-5 mb-lg-0">
@@ -501,10 +519,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Custom JS for Navbar background and text color change on scroll -->
-  <script src="js/scripts.js"></script>
 
   <script src="js/jquery/dist/jquery.min.js"></script>
   <script src="js/jquery.countdown.min.js" asp-append-version="true"></script>
+  <script src="js/scripts.js"></script>
+
   <script>
     $(document).ready(function () {
       $(".count-down-clock").countdown(
